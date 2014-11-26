@@ -1,0 +1,14 @@
+@charset "utf-8";
+html, body { font-family:"微软雅黑"}
+/*
+ * jQuery图片轮播(焦点图)插件
+ * ADD.JENA.201206291027
+ * EDIT.JENA.201206300904
+ * Author: jena
+ * Demo: http://ishere.cn/demo/jquery.slidebox/
+ */
+div.slideBox{ position:relative; width:670px; height:300px; overflow:hidden;}
+div.slideBox ul.items{ position:absolute; float:left; background:none; list-style:none; padding:0px; margin:0px;}
+div.slideBox ul.items li{ float:left; background:none; list-style:none; padding:0px; margin:0px;}
+ 
+

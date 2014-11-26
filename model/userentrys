@@ -1,0 +1,41 @@
+/*
+SQLyog Community Edition- MySQL GUI v8.14 
+MySQL - 5.5.25a : Database - event
+*********************************************************************
+*/
+
+/*!40101 SET NAMES utf8 */;
+
+/*!40101 SET SQL_MODE=''*/;
+
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/`event` /*!40100 DEFAULT CHARACTER SET latin1 */;
+
+USE `event`;
+
+/*Table structure for table `userentrys` */
+
+DROP TABLE IF EXISTS `userentrys`;
+
+CREATE TABLE `userentrys` (
+  `userentryid` int(11) NOT NULL AUTO_INCREMENT,
+  `productid` varchar(128) DEFAULT NULL,
+  `entryid` varchar(128) DEFAULT NULL,
+  `entrytype` int(11) DEFAULT NULL,
+  `userid` varchar(128) DEFAULT NULL,
+  `note` varchar(256) DEFAULT NULL COMMENT '用户类公共事件的额note说明',
+  `emailflag` int(11) DEFAULT NULL COMMENT '用户类公共事件是否email提醒的标志',
+  PRIMARY KEY (`userentryid`)
+) ENGINE=MyISAM AUTO_INCREMENT=96 DEFAULT CHARSET=utf8;
+
+/*Data for the table `userentrys` */
+
+insert  into `userentrys`(`userentryid`,`productid`,`entryid`,`entrytype`,`userid`,`note`,`emailflag`) values (16,'253045701',NULL,2,'7548cdc39c9ffb3a7dc4565a330bf1bb','',0),(17,'310858771',NULL,2,'7548cdc39c9ffb3a7dc4565a330bf1bb',NULL,NULL),(19,'132995991',NULL,2,'7548cdc39c9ffb3a7dc4565a330bf1bb',NULL,NULL),(20,'132995981',NULL,2,'3f0fed062523b65f62f47c3ae4dc88cf',NULL,NULL),(51,NULL,'52',1,'7548cdc39c9ffb3a7dc4565a330bf1bb',NULL,NULL),(30,NULL,'31',1,'7548cdc39c9ffb3a7dc4565a330bf1bb',NULL,NULL),(95,NULL,'96',1,'7548cdc39c9ffb3a7dc4565a330bf1bb',NULL,NULL),(53,NULL,'54',1,'7548cdc39c9ffb3a7dc4565a330bf1bb',NULL,NULL);
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
