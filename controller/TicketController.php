@@ -175,10 +175,10 @@ class TicketController extends Controller {
 		$this->getSmarty ();
 		
 		if ($keyword == null || $keyword == "") {
-			$keyword = "¿Qué Evento?";
+			$keyword = "Â¿QuÃ© Evento?";
 		}
 		if ($location == null || $location == "") {
-			$location = "Localización";
+			$location = "LocalizaciÃ³n";
 		}
 		if ($fromDate == null || $fromDate == "") {
 			$fromDate = "Desde";
@@ -307,8 +307,8 @@ class TicketController extends Controller {
 		$this->smarty->assign ( 'description', $description );
 		$this->smarty->assign ( 'display_price', $display_price );
 		
-		$this->smarty->assign ( 'keyword', "¿Qué Evento?" );
-		$this->smarty->assign ( 'location', "Localización" );
+		$this->smarty->assign ( 'keyword', "ï¿½Quï¿½ Evento?" );
+		$this->smarty->assign ( 'location', "Localizaciï¿½n" );
 		$this->smarty->assign ( 'fromDate', "Desde" );
 		$this->smarty->assign ( 'toDate', "Hasta" );
 		

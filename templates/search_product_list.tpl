@@ -68,11 +68,11 @@
 			location = "";
 		}
 		
-		if(toDate == null || toDate == undefined || "Desde" == toDate){
+		if(toDate == null || toDate == undefined || "Hasta" == toDate){
 			toDate = "";
 		}
 		
-		if(fromDate == null || fromDate == undefined || "Hasta" == fromDate){
+		if(fromDate == null || fromDate == undefined || "Desde" == fromDate){
 			fromDate = "";
 		}
 		
