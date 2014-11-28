@@ -307,8 +307,8 @@ class TicketController extends Controller {
 		$this->smarty->assign ( 'description', $description );
 		$this->smarty->assign ( 'display_price', $display_price );
 		
-		$this->smarty->assign ( 'keyword', "�Qu� Evento?" );
-		$this->smarty->assign ( 'location', "Localizaci�n" );
+		$this->smarty->assign ( 'keyword', "¿Qué Evento?" );
+		$this->smarty->assign ( 'location', "Localización" );
 		$this->smarty->assign ( 'fromDate', "Desde" );
 		$this->smarty->assign ( 'toDate', "Hasta" );
 		
