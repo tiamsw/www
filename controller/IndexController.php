@@ -61,6 +61,11 @@ error_reporting(E_ALL & ~ E_WARNING);
 		$this->smarty->assign ( 'events', $evdata );
 		$this->smarty->assign ( 'imagesources', $source );
 	
+		$this->smarty->assign ( 'keyword', "¿Qué Evento?" );
+		$this->smarty->assign ( 'location', "Localización" );
+		$this->smarty->assign ( 'fromDate', "Desde" );
+		$this->smarty->assign ( 'toDate', "Hasta" );
+		
 		$this->smarty->display ( "index.tpl" );
 	}
 	public function createItemLI($item) {

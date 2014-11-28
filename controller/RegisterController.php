@@ -2,6 +2,12 @@
 class RegisterController extends  Controller{
 	public function index(){ 
 	 $smaryt = $this->getSmarty();
+	 	
+	 	$this->smarty->assign ( 'keyword', "¿Qué Evento?" );
+		$this->smarty->assign ( 'location', "Localización" );
+		$this->smarty->assign ( 'fromDate', "Desde" );
+		$this->smarty->assign ( 'toDate', "Hasta" );
+		
 		 //如果不是post方式的提交，直接转向
 		 if(!CommonBase::isPost()){
 		 	 $this->smarty->display("register.tpl"); 
