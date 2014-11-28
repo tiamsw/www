@@ -3,6 +3,12 @@ class LoginController extends  Controller{
 	public function index(){ 
 			 $smaryt = $this->getSmarty();
 			 //如果不是post方式的提交，直接转向
+			 
+			$this->smarty->assign ( 'keyword', "¿Qué Evento?" );
+			$this->smarty->assign ( 'location', "Localización" );
+			$this->smarty->assign ( 'fromDate', "Desde" );
+			$this->smarty->assign ( 'toDate', "Hasta" );
+		
 			 if(!CommonBase::isPost()){
 			 	$this->smarty->display("login.tpl"); 
 			 	return;
