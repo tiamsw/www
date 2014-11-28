@@ -17,6 +17,12 @@ class BuyticketController extends  Controller{
 		$db->update("products", array('click_count'=>$count+1), array("aw_product_id"=>$pid));
 		 
 		$this->getSmarty(); 
+		
+		$this->smarty->assign ( 'keyword', "¿Qué Evento?" );
+		$this->smarty->assign ( 'location', "Localización" );
+		$this->smarty->assign ( 'fromDate', "Desde" );
+		$this->smarty->assign ( 'toDate', "Hasta" );
+		
 		$this->smarty->assign ( 'ticketurl', $result['href'] ); 
  		$this->smarty->display("buyticket.tpl"); 
 	}
