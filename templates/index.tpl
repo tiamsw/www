@@ -21,42 +21,15 @@
         	</DIV>
         </DIV>
         <div class="row5">
-        	<div>
-                <h3>live  at  the  apollo6</h3>
-                <span class="time">August 25th, 20:00hrs</span>
-                <p>Lorem ipsum dolor sit amet, 
-                    consectetur adipisicing elit, sed 
-                    do eiusmod tempor incididunt
-                </p>
-                <A href="{{$smarty.const.WEBSITE_URL}}about" class="a-but">Más Detalles</A>
-            </div>
-            <div>
-                <h3>live  at  the  apollo6</h3>
-                <span class="time">August 25th, 20:00hrs</span>
-                <p>Lorem ipsum dolor sit amet, 
-                    consectetur adipisicing elit, sed 
-                    do eiusmod tempor incididunt
-                </p>
-                <A href="{{$smarty.const.WEBSITE_URL}}about" class="a-but">Más Detalles</A>
-            </div>
-            <div>
-                <h3>live  at  the  apollo6</h3>
-                <span class="time">August 25th, 20:00hrs</span>
-                <p>Lorem ipsum dolor sit amet, 
-                    consectetur adipisicing elit, sed 
-                    do eiusmod tempor incididunt
-                </p>
-                <A href="{{$smarty.const.WEBSITE_URL}}about" class="a-but">Más Detalles</A>
-            </div>
-            <div>
-                <h3>live  at  the  apollo6</h3>
-                <span class="time">August 25th, 20:00hrs</span>
-                <p>Lorem ipsum dolor sit amet, 
-                    consectetur adipisicing elit, sed 
-                    do eiusmod tempor incididunt
-                </p>
-                <A href="{{$smarty.const.WEBSITE_URL}}about" class="a-but">Más Detalles</A>
-            </div>
+	        {{foreach $events as $event}}
+	                	<div>
+	                <h3>{{$event.name}}</h3>
+	                <span class="time">{{$event.time}}</span>
+	                <p>{{$event.desc}}
+	                </p>
+	                <A href="{{$event.url}}" class="a-but">View Details</A>
+	            </div>
+			{{/foreach}}
         </div>
         <div class="row6">
         	<div>

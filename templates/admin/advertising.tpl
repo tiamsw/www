@@ -210,6 +210,7 @@ jQuery(function () {
 									<option value="search2">search2</option>
 									<option value="product1">product1</option>
 									<option value="product2">product2</option>
+									<option value="homeevent">homeevent</option>
 								</select>
 							</div>
 						</div>
